@@ -367,9 +367,3 @@ Building the local dashboard also showed the importance of presenting informatio
 
 The project reinforced that an edge system should be evaluated not only by whether it works under normal conditions, but also by how it behaves when data is missing, the network fails or a prediction cannot be justified.
 
----
-
-**Module:** AI at the Edge  
-**Programme:** MSc Applied Artificial Intelligence  
-**Institution:** South East Technological University (SETU), Ireland  
-**Project type:** Guided Weather Station Workbook
