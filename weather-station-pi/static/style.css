@@ -1,0 +1,115 @@
+
+/* Shared spacing and readable type keep a small dashboard predictable. */
+
+:root {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    color-scheme: light;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 70rem;
+    margin: auto;
+    padding: 1.25rem;
+    color: #17322f;
+    background: #f4f7f6;
+}
+
+header {
+    padding: 1.5rem 0;
+}
+
+section {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border: 1px solid #748c85;
+    border-radius: 0.8rem;
+    background: white;
+}
+
+h1,
+h2 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(2rem, 6vw, 3.2rem);
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+.notice {
+    border-left: 0.3rem solid #80d514;
+    padding: 0.8rem 1rem;
+    background: #fff8e5;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+    gap: 1rem;
+}
+
+dl div {
+    padding: 1rem;
+    border: 1px solid #748c85;
+    border-radius: 0.5rem;
+    background: #f6f9f8;
+}
+
+dt {
+    font-weight: 600;
+}
+
+dd {
+    margin: 0.4rem 0 0;
+    overflow-wrap: anywhere;
+    font-variant-numeric: tabular-nums;
+}
+
+button {
+    min-height: 3rem;
+    padding: 0.6rem 1rem;
+    font: inherit;
+    border: 1px solid #486d65;
+    border-radius: 0.4rem;
+    background: #e8f1ee;
+    cursor: pointer;
+}
+
+a {
+    color: #005c52;
+    text-underline-offset: 0.2rem;
+}
+
+:focus-visible {
+    outline: 3px solid #8564aa;
+    outline-offset: 4px;
+}
+
+.skip {
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        scroll-behavior: auto;
+    }
+}

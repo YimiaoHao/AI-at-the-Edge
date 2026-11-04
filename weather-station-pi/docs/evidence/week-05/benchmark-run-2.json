@@ -1,0 +1,11 @@
+{
+  "iterations": 1000,
+  "operation": "ridge_inference",
+  "median_ms": 0.014528,
+  "p95_ms": 0.0150199,
+  "mean_ms": 0.014704946,
+  "mean_cpu_seconds": 1.7344e-05,
+  "peak_process_rss_kb": 13280,
+  "wall_seconds_total": 0.027863028000865597,
+  "note": "Synthetic representative input; inference timing only. Sensor reads, SQLite and MQTT are not included."
+}

@@ -1,0 +1,68 @@
+{
+  "created_utc": "2026-11-02T23:11:08.978460+00:00",
+  "objective": "Predict temperature approximately 60 seconds ahead",
+  "data_source": "Real Sense HAT observations",
+  "raw_observations": 972,
+  "raw_partition_sizes": {
+    "train": 680,
+    "validation": 146,
+    "test": 146
+  },
+  "usable_examples": {
+    "train": 661,
+    "validation": 130,
+    "test": 97
+  },
+  "split_method": "Chronological raw-data split before feature and target construction; no overlapping partition windows",
+  "feature_names": [
+    "temperature_c",
+    "humidity_pct",
+    "pressure_hpa",
+    "temperature_mean5_c",
+    "humidity_mean5_pct",
+    "temperature_delta5_c"
+  ],
+  "horizon_steps": 12,
+  "alpha_candidates": [
+    {
+      "alpha": 0.01,
+      "validation_mae_c": 0.12392470945794187
+    },
+    {
+      "alpha": 0.1,
+      "validation_mae_c": 0.12401791472799131
+    },
+    {
+      "alpha": 1.0,
+      "validation_mae_c": 0.12486813191747072
+    },
+    {
+      "alpha": 10.0,
+      "validation_mae_c": 0.13048606357800147
+    },
+    {
+      "alpha": 100.0,
+      "validation_mae_c": 0.1654046777827884
+    }
+  ],
+  "selected_alpha": 0.01,
+  "validation_persistence": {
+    "mae_c": 0.10222847278301532,
+    "rmse_c": 0.12784067520216003
+  },
+  "test_persistence": {
+    "mae_c": 0.10124943920017518,
+    "rmse_c": 0.12746389185268897
+  },
+  "test_ridge": {
+    "mae_c": 0.08998462122722116,
+    "rmse_c": 0.11216865823027176
+  },
+  "ridge_beats_persistence": true,
+  "limitations": [
+    "Only one Sense HAT station was used.",
+    "The Pi may heat the temperature sensor.",
+    "Performance on other dates or devices is untested.",
+    "This is an experimental forecast, not a warning service."
+  ]
+}

@@ -1,0 +1,22 @@
+
+# Python environments and caches
+**/.venv/
+**/venv/
+**/__pycache__/
+**/*.pyc
+**/.pytest_cache/
+
+# Runtime files
+**/station.lock
+**/*.db-wal
+**/*.db-shm
+
+# Local credentials
+**/.env
+**/.env.*
+**/*.pem
+**/*.key
+
+# Temporary and system files
+.DS_Store
+Thumbs.db

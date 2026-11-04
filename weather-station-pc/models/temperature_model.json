@@ -1,0 +1,44 @@
+{
+  "model_type": "ridge_regression",
+  "schema_version": 1,
+  "feature_names": [
+    "temperature_c",
+    "humidity_pct",
+    "pressure_hpa",
+    "temperature_mean5_c",
+    "humidity_mean5_pct",
+    "temperature_delta5_c"
+  ],
+  "horizon_steps": 12,
+  "horizon_seconds": 60,
+  "sample_interval_s": 5,
+  "source": "sense_hat",
+  "station_id": "station01",
+  "selected_alpha": 0.01,
+  "coefficients": [
+    0.02677955901297016,
+    -0.007251106261394635,
+    0.0023575979742986395,
+    0.28883187518530284,
+    0.041611877711250606,
+    0.0085677234531089
+  ],
+  "intercept": 32.16471693036524,
+  "means": [
+    32.1794447434687,
+    30.74433797891764,
+    1041.2810268474439,
+    32.182070962879294,
+    30.752362840365496,
+    -0.004837771583296707
+  ],
+  "scales": [
+    0.35088776361737606,
+    1.1336211113737271,
+    0.049619128895517915,
+    0.3431152951399852,
+    1.096842246999727,
+    0.09961066221641462
+  ],
+  "training_rows": 972
+}
